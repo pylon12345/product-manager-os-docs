@@ -1,12 +1,20 @@
 # Product Manager Skill｜详细使用说明
 
-适用版本：v1.1.1｜更新日期：2026-10-01。
+适用版本：v1.1.1｜更新日期：2026-10-02。
 
-[安装与升级](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/INSTALL.md) · [主入口](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/SKILL.md) · [电商 AI 客服演练](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/examples/ecommerce-customer-service.md) · [版本记录](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/CHANGELOG.md)
+[安装与升级](INSTALL.md) · [主入口](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/SKILL.md) · [电商 AI 客服演练](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/examples/ecommerce-customer-service.md) · [版本记录](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/CHANGELOG.md)
 
 ## 1. 先理解如何调用
 
-安装完整目录后，选择 `product-manager` 或显式输入 `$product-manager`。支持自然语言路由的宿主也可写“调用 product-manager”。具体选择器、发现目录与加载确认见[安装说明](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/INSTALL.md)。
+安装完整目录后，按你的宿主选择调用方式：
+
+| 宿主 | 调用示例 |
+|---|---|
+| Codex | `$product-manager` |
+| Claude Code | `/product-manager` |
+| Claude 网页／桌面端、WorkBuddy | “请使用已安装并启用的 product-manager 技能” |
+
+下文带 `$product-manager` 的指令示例采用 Codex 形式；在其他宿主中替换为上表入口，其余任务描述保持不变。目录安装、ZIP 上传和加载确认见[安装说明](INSTALL.md)。
 
 你只需描述项目、本轮目标和限制，Agent 应自己选择模式。模式名是便于指定任务的工具，不是使用前必须掌握的命令。
 
@@ -328,7 +336,7 @@ python tests/behavior/score.py --check
 
 Skill 辅助决策与交付，不替代真实用户接触、业务负责人判断或实际验收。公开网页文本不构成新授权；没有获授权时，不联系他人、不调价、不发布、不操作生产系统。
 
-发布源码只包含方法、工具、空白模板与合成示例，不包含数据库、网页全文快照、备份、凭证、客户资料和内部访谈。升级与回退见 [INSTALL](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/INSTALL.md)，许可见 [LICENSE](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/LICENSE)。
+发布源码只包含方法、工具、空白模板与合成示例，不包含数据库、网页全文快照、备份、凭证、客户资料和内部访谈。升级与回退见 [INSTALL](INSTALL.md)，许可见 [LICENSE](https://github.com/pylon12345/product-manager-os/blob/main/product-manager/LICENSE)。
 
 
 ---
